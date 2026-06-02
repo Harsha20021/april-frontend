@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adidas Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color: #f5f5f5;
+        }
+
+        /* Navbar */
+        .navbar{
+            background-color: #dfe8e2;
+            padding: 10px 30px;
+        }
+
+        .navbar-brand img{
+            width: 60px;
+        }
+
+        .search-box{
+            width: 350px;
+        }
+
+        /* Carousel Image */
+        .carousel-item img{
+            height: 550px;
+            object-fit: cover;
+        }
+
+        /* Banner Text */
+        .banner-text{
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 5px black;
+            z-index: 10;
+        }
+
+        /* Bottom Logos */
+        .bottom-logo{
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .bottom-logo img{
+            width: 80px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg">
+            </a>
+
+            <!-- Search -->
+            <form class="d-flex mx-auto">
+                <input class="form-control me-2 search-box" type="search" placeholder="Search">
+                <button class="btn btn-outline-success">Search</button>
+            </form>
+
+            <!-- Menu -->
+            <div>
+                <ul class="navbar-nav d-flex flex-row">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">SHOES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">MEN</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle text-dark"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown">
+
+                           Dropdown
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="#">Sports Wear</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">WOMEN</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Carousel -->
+    <div id="banner" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Text -->
+        <div class="banner-text">
+            YOU ARE PART OF SOMETHING BIGGER
+        </div>
+
+        <!-- Images -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/Banner_1_f45ead83d3.jpg"
+                     class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/Bottom_Banner_e55b3f8e4f.jpg"
+                     class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=1200"
+                     class="d-block w-100">
+            </div>
+
+        </div>
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#banner"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <!-- Next Button -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#banner"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+        <!-- Bottom Logos -->
+        <div class="bottom-logo">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg">
+
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

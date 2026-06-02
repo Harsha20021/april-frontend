@@ -1,0 +1,15 @@
+diff btw var,let and const
+
+types of data type 
+primitive -- string,number,bigint, boolean, undefined, null, symbol
+non- primitive-- object and array
+
+operators-- airthematic ope, assignmenet ope, comparision ope, logical ope, terinery operators 
+
+diff btw == and ===
+== just compares the values
+=== compares the values by taking the datatype in considaration 
+
+diff btw while and do while 
+will follow condition 
+will execute the first block and the check the condition

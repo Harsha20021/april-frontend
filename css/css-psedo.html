@@ -1,0 +1,54 @@
+<!--13/05/26-->
+<!--:Hover , :: first-line  , ::first-letter,  ::selection, :nth-child -->
+<!--the elements with a singel : is called pseud classes and the :: is called pseudo elements -->
+<html>
+    <head>
+        <title>
+            CSS Pseudo learning 
+        </title>
+    </head>
+    <style>
+        .hello{
+            background-color: yellow;
+            width: 150px;
+            height: 50px;
+        }
+        .hello:hover{
+            background-color: blue;
+        }
+        p::first-line{
+            font-size: 30px;
+            color: green;
+
+        }
+        p::first-letter{
+            font-style: italic;
+        }
+        p::selection{
+            background-color: purple;
+        }
+        li:nth-child(3n+1){
+            background-color: yellow;
+        }
+    </style>
+    <body>
+        <button class="Hello">Hello</button>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente expedita deleniti, nam dolor itaque eius quaerat fugiat consequuntur laudantium quod perferendis quidem officia unde asperiores explicabo animi, eaque, fuga recusandae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magnam eum dicta maiores totam exercitationem, eligendi nemo explicabo repudiandae enim possimus id cupiditate pariatur commodi voluptatum veritatis, quaerat numquam ducimus.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic cupiditate reiciendis harum vitae sit autem accusamus voluptates et cum, exercitationem quis itaque facere suscipit ut optio odio eaque rem incidunt!
+        </p>
+        <ul>
+            <li>KOLHI Number 18</li>
+            <li>Dhoni Number 7</li>
+            <li>Rohit Number 45</li>
+            <li>Sachin Number 10</li>
+            <li>Kl Rahul Number 1</li>
+            <li>KOLHI Number 18</li>
+            <li>Dhoni Number 7</li>
+            <li>Rohit Number 45</li>
+            <li>Sachin Number 10</li>
+            <li>Kl Rahul Number 1</li>
+        </ul>
+    </body>
+</html>
